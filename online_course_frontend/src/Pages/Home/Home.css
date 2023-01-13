@@ -1,0 +1,51 @@
+.container {
+  height: 100vh;
+  padding: 5rem;
+  box-sizing: border-box;
+}
+.vector-graphics {
+  filter: drop-shadow(0 40px 10px rgba(0, 0, 0, 0.3));
+  animation: vectorAnimation 1s infinite ease-in-out alternate;
+}
+@keyframes vectorAnimation {
+  to {
+    transform: translateY(-10px);
+  }
+}
+.brandsBanner > svg {
+  color: white;
+  font-size: 3rem;
+  transform: color 0.5s;
+}
+.brandsBanner > svg:hover {
+  color: rgb(255, 221, 0);
+}
+.intro-video-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-video-container video {
+  width: 60%;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* ...............Media queries(Medium Device)........................ */
+@media screen and (max-width: 1024px) {
+}
+
+/* ...............Media queries(Small Device)........................ */
+@media screen and (max-width: 600px) {
+  .intro-video-container {
+    height: unset;
+    padding: 4vh 0;
+  }
+  .intro-video-container video {
+    width: 100%;
+  }
+}
