@@ -3,7 +3,7 @@ import { MainRoutes } from "./routes/MainRoutes";
 import { Footer } from "./components/Footer";
 function App() {
   return (
-    <div classNameNameNameNameName="App">
+    <div className="App">
       <Navbar />
       <MainRoutes />
       <Footer />
