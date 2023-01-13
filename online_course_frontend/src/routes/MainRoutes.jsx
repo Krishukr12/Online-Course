@@ -9,6 +9,7 @@ import { ResetPassword } from "../Pages/Auth/ResetPassword";
 import { Contact } from "../Pages/Contact/Contact";
 import { Request } from "../Pages/Request_Course/Request";
 import { About } from "../Pages/About/About";
+import { NotFound } from "../Pages/NotFound/NotFound";
 export const MainRoutes = () => {
   return (
     <>
@@ -22,6 +23,7 @@ export const MainRoutes = () => {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/request" element={<Request />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </>
   );
