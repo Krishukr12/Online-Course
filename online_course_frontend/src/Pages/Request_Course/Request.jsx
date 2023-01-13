@@ -39,7 +39,9 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 export function Request() {
   return (
     <Flex
-      bg={useColorModeValue("gray.100", "gray.900")}
+      mt={["20", "0"]}
+      mb={["10", "0"]}
+      // bg={useColorModeValue("gray.100", "gray.900")}
       align="center"
       justify="center"
       css={{

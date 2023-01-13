@@ -28,7 +28,7 @@ import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
 
 export function Contact() {
   return (
-    <Container maxW="full" mt={0} centerContent overflow="hidden">
+    <Container mb={"10"} maxW="full" mt={"20"} centerContent overflow="hidden">
       <Flex>
         <Box
           bg="#02054B"

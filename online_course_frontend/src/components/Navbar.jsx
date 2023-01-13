@@ -22,7 +22,7 @@ const LinkButton = ({ url, title = "Home", onClose }) => (
 );
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const user = {
     role: "admin",
   };
