@@ -9,7 +9,10 @@ import { ResetPassword } from "../Pages/Auth/ResetPassword";
 import { Contact } from "../Pages/Contact/Contact";
 import { Request } from "../Pages/Request_Course/Request";
 import { About } from "../Pages/About/About";
-import { NotFound } from "../Pages/NotFound/NotFound";
+import { NotFound } from "../components/NotFound";
+import { Subscribe } from "../Pages/Payment/Subscribe";
+import { PaymentFail } from "../Pages/Payment/PaymentFail";
+import { PaymentSucess } from "../Pages/Payment/PaymentSucess";
 export const MainRoutes = () => {
   return (
     <>
@@ -24,6 +27,9 @@ export const MainRoutes = () => {
         <Route path="/request" element={<Request />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="*" element={<NotFound />}></Route>
+        <Route path="/subscribe" element={<Subscribe />}></Route>
+        <Route path="/paymentfail" element={<PaymentFail />}></Route>
+        <Route path="/paymentsucess" element={<PaymentSucess />}></Route>
       </Routes>
     </>
   );
