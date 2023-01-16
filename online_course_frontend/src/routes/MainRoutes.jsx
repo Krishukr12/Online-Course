@@ -13,12 +13,14 @@ import { NotFound } from "../components/NotFound";
 import { Subscribe } from "../Pages/Payment/Subscribe";
 import { PaymentFail } from "../Pages/Payment/PaymentFail";
 import { PaymentSucess } from "../Pages/Payment/PaymentSucess";
+import { CoursePage } from "../Pages/CoursePage/CoursePage";
 export const MainRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/courses" element={<Courses />}></Route>
+        <Route path="/courses/:id" element={<CoursePage />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/forgetpassword" element={<ForgetPassword />}></Route>
