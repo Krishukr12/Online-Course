@@ -11,8 +11,13 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { RiDeleteBin7Fill } from "react-icons/ri";
+import { ChangeAvatar } from "../../components/ChangeAvatar";
 export const Profile = () => {
+  //*remove from playlist Handler
+  const removeFromPlaylistHandler = (id) => {
+    alert(id);
+  };
   //  TODO Data will get from the API
   const user = {
     name: "krishan",
@@ -24,8 +29,9 @@ export const Profile = () => {
     },
     playlist: [
       {
-        course: "course",
-        poster: "role",
+        course: "krrishan",
+        poster:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQhde6U4RTgVcFysizOG3Of44_9OBzXPlwTfjHdDEk&s",
       },
     ],
   };
@@ -90,11 +96,23 @@ export const Profile = () => {
         >
           {user.playlist.map((item, index) => (
             <VStack w={"48"} m={"2"} key={item.course}>
-              <Image boxSize={"full"} objectFit={"contain"} src="item.poster" />
+              <Image boxSize={"full"} objectFit={"contain"} src={item.poster} />
+              <HStack>
+                <Link to={`/course/${item.course}`}>
+                  <Button variant={"ghost"} colorScheme={"yellow"}>
+                    Watch Now
+                  </Button>
+                </Link>
+                <Button onClick={() => removeFromPlaylistHandler(item.course)}>
+                  <RiDeleteBin7Fill />
+                </Button>
+              </HStack>
             </VStack>
           ))}
         </Stack>
       )}
+      <ChangeAvatar />
+      //Todo 13 no video on 6pack gamer remain
     </Container>
   );
 };
