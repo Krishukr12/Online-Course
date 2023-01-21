@@ -14,6 +14,9 @@ import { Subscribe } from "../Pages/Payment/Subscribe";
 import { PaymentFail } from "../Pages/Payment/PaymentFail";
 import { PaymentSucess } from "../Pages/Payment/PaymentSucess";
 import { CoursePage } from "../Pages/CoursePage/CoursePage";
+import { Profile } from "../Pages/Profile/Profile";
+
+
 export const MainRoutes = () => {
   return (
     <>
@@ -32,6 +35,7 @@ export const MainRoutes = () => {
         <Route path="/subscribe" element={<Subscribe />}></Route>
         <Route path="/paymentfail" element={<PaymentFail />}></Route>
         <Route path="/paymentsucess" element={<PaymentSucess />}></Route>
+        <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </>
   );

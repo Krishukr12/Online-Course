@@ -22,7 +22,7 @@ const LinkButton = ({ url, title = "Home", onClose }) => (
 );
 export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const isAuthenticated = false;
+  const isAuthenticated = true;
   const user = {
     role: "admin",
   };
@@ -43,6 +43,7 @@ export const Navbar = () => {
         rounded="full"
         left="6"
         top="6"
+        zIndex={"overlay"}
       >
         <RiMenu5Fill />
       </Button>

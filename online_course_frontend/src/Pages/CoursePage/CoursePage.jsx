@@ -2,13 +2,13 @@ import { Box, Grid, Heading, Text, VStack } from "@chakra-ui/react";
 import React, { useState } from "react";
 import introVideo from "../../assets/videos/courseIntro.mp4";
 export const CoursePage = () => {
-  //TODO Below Variable will be mapped throw the array later
+  //! Below Variable will be mapped throw the array later
   const [lectureNumber, setlectureNumber] = useState(0);
   const lectures = [
     {
       _id: "id",
       title: "sample",
-      description: "krisahfnasdfasdfasdf",
+      description: "krishan",
       video: {
         url: "httpskrisha",
       },
@@ -16,7 +16,7 @@ export const CoursePage = () => {
     {
       _id: "id2",
       title: "sample2",
-      description: "krisahfnasdfasdfasdf",
+      description: "kumar",
       video: {
         url: "httpskrisha",
       },
@@ -24,12 +24,13 @@ export const CoursePage = () => {
     {
       _id: "id3",
       title: "sample3",
-      description: "krisahfnasdfasdfasdf",
+      description: "safi",
       video: {
         url: "httpskrisha",
       },
     },
   ];
+
   return (
     <Grid minHeight={"90vh"} templateColumns={["1fr", "3fr 1fr"]}>
       <Box>

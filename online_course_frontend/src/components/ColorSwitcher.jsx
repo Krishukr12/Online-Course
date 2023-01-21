@@ -11,6 +11,7 @@ export default function ColorSwitcher() {
       right={6}
       fontSize="20px"
       onClick={toggleColorMode}
+      zIndex={"overlay"}
     >
       {colorMode === "light" ? <MdDarkMode /> : <AiFillSetting />}
     </Button>
